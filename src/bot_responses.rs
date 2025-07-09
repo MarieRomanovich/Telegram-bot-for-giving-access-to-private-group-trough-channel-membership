@@ -7,8 +7,7 @@ pub async fn responses (bot: Bot, channel: String, group_link: String) {
     teloxide::repl(bot.clone(), move |msg: Message| {
         let bot = bot.clone();
         let channel = channel.clone();
-        let group_link = group_link.clone(); //why tf do i actually need to clone all of this?
-
+        let group_link = group_link.clone();
 
 
         async move {
